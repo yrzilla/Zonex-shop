@@ -1,0 +1,107 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    &__container {
+        display: flex;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__shop-nav {
+        margin-left: 254px;
+    }
+}
+
+
+.nav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
+    }
+    &__link {
+        position: relative;
+        font-size: 15px;
+        &::before {
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #151515;
+            transition: width 0.15s;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+                transition: width 0.15s;
+            }
+        }
+
+        &--current {
+            &::before {
+                width: 100%;
+                transition: width 0.15s;
+            }
+        }
+    }
+}
+
+.shop-nav {
+    display: flex;
+    align-items: center;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        &--user {
+            background-image: url('../../icons/header/user.png');
+        }
+    }
+}
+
+.cart {
+    width: auto;
+    height: auto;
+    &__icon {
+        display: inline-block;
+        background-image: url('../../icons/header/cart.png');
+        width: 16px;
+        height: 16px;
+    }
+    &__quantity {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 0 5px;
+        height: 16px;
+        font-weight: 700;
+        font-size: 10px;
+        color: var(--color-white);
+        background-color: var(--color-dark);
+    }
+}
+
+.search-form {
+    &__btn {
+        display: inline-block;
+        background-image: url('../../icons/header/search.png');
+        width: 16px;
+        height: 16px;
+    }
+}
