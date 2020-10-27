@@ -1,0 +1,25 @@
+.main-products {
+    &__container {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+    &__item {
+        margin: 0 18px;
+    }
+    &__btn {
+        font-size: 24px;
+    }
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,28 @@
+.banners {
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        flex-shrink: 0;
+        width: 33%;
+        &:not(:last-child) {
+            margin-right: 0.6%;
+        }
+    }
+}
+
+.banners-article {
+    padding: 54px 60px;
+    padding-right: 45%;
+    background-color: #e9e4df;
+    min-height: 290px;
+    &__title {
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
